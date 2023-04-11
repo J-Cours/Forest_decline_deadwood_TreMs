@@ -1,0 +1,216 @@
+                    Response                Predictor Estimate Std.Error DF Crit.Value P.Value Std.Estimate    
+1                 log_LW_vol             level_depe_G  -1.2614    0.2833 41    -4.4530  0.0001      -0.5315 ***
+2                 log_DW_vol             level_depe_G   5.1628    0.6699 41     7.7063  0.0000       0.7653 ***
+3               log_DW_dec12             level_depe_G   1.9372    1.2828 41     1.5100  0.1387       0.2160    
+4               log_DW_dec34             level_depe_G   5.6224    0.6949 41     8.0904  0.0000       0.7805 ***
+5                log_DW_PBBM             level_depe_G   5.2497    0.8789 41     5.9734  0.0000       0.6775 ***
+6               log_DW_GBTGB             level_depe_G   3.9313    0.9847 41     3.9923  0.0003       0.5134 ***
+7                 log_DW_BMS             level_depe_G   5.9891    0.6931 41     8.6404  0.0000       0.8000 ***
+8                 log_DW_BMD             level_depe_G   4.2251    1.2005 41     3.5195  0.0011       0.4741  **
+9             log_DW_div_tot             level_depe_G   1.8224    0.3278 41     5.5588  0.0000       0.6511 ***
+10                   FRic_DW             level_depe_G   0.2104    0.0492 41     4.2746  0.0001       0.5365 ***
+11                   FDiv_DW             level_depe_G   0.6214    0.2662 41     2.3339  0.0246       0.3330   *
+12                   FEve_DW             level_depe_G   0.3375    0.2902 41     1.1629  0.2516       0.1766    
+13                   FDis_DW             level_depe_G   0.0364    0.0605 41     0.6013  0.5510       0.0881    
+14                CWM_statut             level_depe_G  -1.0721    0.0756 41   -14.1887  0.0000      -0.9096 ***
+15           log_FDis_statut             level_depe_G   1.0157    0.0674 41    15.0721  0.0000       0.9182 ***
+16      log_CWM_stade_saprox             level_depe_G   0.1293    0.0988 40     1.3094  0.1979       0.0907    
+17         FDis_stade_saprox             level_depe_G  -0.2202    0.2994 39    -0.7357  0.4663      -0.1159    
+18         FDis_stade_saprox                FDis_ONTO  -0.0937    0.2948 39    -0.3180  0.7522      -0.0525    
+19                   CWM_dbh             level_depe_G  -5.3574    8.4029 40    -0.6376  0.5274      -0.0784    
+20                  FDis_dbh             level_depe_G  -0.1114    0.2316 40    -0.4810  0.6331      -0.0708    
+21            nb_TGB_All_sub             level_depe_G -13.6092   12.9536 41    -1.0506  0.2996      -0.1598    
+22              log_TreMs_ab               log_LW_vol   0.2833    0.1359 39     2.0841  0.0437       0.2410   *
+23              log_TreMs_ab                  CWM_dbh  -0.0224    0.0047 39    -4.7893  0.0000      -0.5484 ***
+24              log_TreMs_ab               log_DW_BMD   0.1449    0.0358 39     4.0419  0.0002       0.4629 ***
+25             log_TreMs_div               log_DW_BMD   0.1265    0.0222 41     5.6897  0.0000       0.6496 ***
+26                FRic_TreMs                  CWM_dbh   0.1766    0.0667 40     2.6491  0.0115       0.3590   *
+27                FRic_TreMs              log_DW_PBBM   1.6810    0.5837 40     2.8799  0.0064       0.3873  **
+28                FDiv_TreMs           nb_TGB_All_sub  -0.0034     9e-04 40    -3.8703  0.0004      -0.5627 ***
+29                FDiv_TreMs                 FDis_dbh   0.1523    0.0484 40     3.1482  0.0031       0.4639  **
+30                FEve_TreMs             level_depe_G   0.0970    0.0911 41     1.0643  0.2934       0.1621    
+31                FDis_TreMs             level_depe_G   0.7066    0.2302 41     3.0691  0.0038       0.3923  **
+32     CWM_DW_type_substrate                  CWM_dbh   0.0054    0.0016 40     3.3305  0.0019       0.4210  **
+33     CWM_DW_type_substrate               log_DW_BMD  -0.0296    0.0123 40    -2.3961  0.0213      -0.3029   *
+34    FDis_DW_type_substrate             level_depe_G   0.6920    0.1822 40     3.7973  0.0005       0.8142 ***
+35    FDis_DW_type_substrate             log_DW_dec34  -0.0826    0.0253 40    -3.2663  0.0022      -0.7003  **
+36                   CWM_POS               log_LW_vol  -0.1126    0.0521 41    -2.1599  0.0367      -0.3058   *
+37              log_FDis_POS                  CWM_dbh   0.0063    0.0019 40     3.2957  0.0021       0.5139  **
+38              log_FDis_POS     log_CWM_stade_saprox  -0.2227    0.0905 40    -2.4612  0.0183      -0.3808   *
+39           CWM_HUM_dry_wet                 FDis_dbh  -0.1046    0.0422 40    -2.4800  0.0174      -0.3276   *
+40           CWM_HUM_dry_wet     log_CWM_stade_saprox  -0.0992    0.0454 40    -2.1824  0.0350      -0.2813   *
+41          FDis_HUM_dry_wet             level_depe_G   0.4757     0.127 41     3.7441  0.0006       0.5002 ***
+42                  CWM_LIFE               log_DW_BMD  -0.0530    0.0084 39    -6.2862  0.0000      -0.6837 ***
+43                  CWM_LIFE             log_DW_GBTGB   0.0307    0.0094 39     3.2607  0.0023       0.3396  **
+44                  CWM_LIFE               CWM_statut   0.2627    0.0608 39     4.3196  0.0001       0.4479 ***
+45                 FDis_LIFE               log_DW_BMD   0.1318    0.0184 41     7.1802  0.0000       0.7423 ***
+46                  CWM_ONTO             level_depe_G  -0.6154    0.2206 39    -2.7899  0.0081      -0.6050  **
+47                  CWM_ONTO             log_DW_dec34   0.0966    0.0309 39     3.1277  0.0033       0.6843  **
+48                  CWM_ONTO                  CWM_dbh  -0.0053     0.002 39    -2.5746  0.0139      -0.3529   *
+49                 FDis_ONTO               log_DW_BMD  -0.0289    0.0158 41    -1.8290  0.0747      -0.2420    
+50         CWM_DW_saproxylic             log_DW_dec12  -0.0949    0.0423 39    -2.2430  0.0307      -0.3076   *
+51         CWM_DW_saproxylic           log_DW_div_tot   0.6358    0.1287 39     4.9409  0.0000       0.6434 ***
+52         CWM_DW_saproxylic           nb_TGB_All_sub  -0.0086    0.0037 39    -2.3234  0.0255      -0.2652   *
+53              ~~log_DW_vol           ~~log_DW_dec12   0.4309         - 44     3.0574  0.0020       0.4309  **
+54            ~~log_DW_dec12            ~~log_DW_PBBM   0.3549         - 44     2.4307  0.0098       0.3549  **
+55            ~~log_DW_dec12         ~~log_DW_div_tot   0.4803         - 44     3.5059  0.0006       0.4803 ***
+56            ~~log_DW_dec12                ~~FDiv_DW   0.4757         - 44     3.4628  0.0006       0.4757 ***
+57                 ~~FDis_DW                ~~FEve_DW   0.5564         - 44     4.2881  0.0001       0.5564 ***
+58                 ~~CWM_dbh                ~~FEve_DW   0.2886         - 44     1.9304  0.0302       0.2886   *
+59                ~~FDis_dbh                ~~FEve_DW   0.5110         - 44     3.8061  0.0002       0.5110 ***
+60                 ~~FEve_DW               ~~FDis_dbh   0.5110         - 44     3.8061  0.0002       0.5110 ***
+61                 ~~FEve_DW           ~~log_DW_GBTGB   0.4579         - 44     3.2978  0.0010       0.4579  **
+62                 ~~FEve_DW         ~~log_DW_div_tot   0.5386         - 44     4.0927  0.0001       0.5386 ***
+63                 ~~FEve_DW                ~~FDiv_DW   0.8025         - 44     8.6137  0.0000       0.8025 ***
+64                 ~~FEve_DW              ~~FDis_ONTO   0.4373         - 44     3.1133  0.0017       0.4373  **
+65                 ~~FDis_DW                ~~CWM_dbh   0.0183         - 44     0.1170  0.4537       0.0183    
+66                 ~~FDis_DW               ~~FDis_dbh   0.2796         - 44     1.8647  0.0347       0.2796   *
+67                 ~~FDis_DW             ~~log_DW_vol   0.4825         - 44     3.5269  0.0005       0.4825 ***
+68                 ~~FDis_DW           ~~log_DW_GBTGB   0.3414         - 44     2.3260  0.0125       0.3414   *
+69                 ~~FDis_DW             ~~log_DW_BMD   0.4711         - 44     3.4201  0.0007       0.4711 ***
+70                 ~~FDis_DW         ~~log_DW_div_tot   0.6800         - 44     5.9390  0.0000       0.6800 ***
+71                 ~~FDis_DW                ~~FRic_DW   0.5433         - 44     4.1439  0.0001       0.5433 ***
+72                 ~~FDis_DW                ~~FDiv_DW   0.5945         - 44     4.7339  0.0000       0.5945 ***
+73              ~~CWM_statut                ~~CWM_dbh   0.2487         - 44     1.6439  0.0539       0.2487    
+74              ~~CWM_statut               ~~FDis_dbh   0.2359         - 44     1.5547  0.0639       0.2359    
+75              ~~CWM_statut         ~~log_DW_div_tot   0.1316         - 44     0.8501  0.2001       0.1316    
+76                 ~~CWM_dbh               ~~FDis_dbh   0.4999         - 43     3.6505  0.0004       0.4999 ***
+77                 ~~CWM_dbh           ~~log_DW_GBTGB   0.5334         - 44     4.0383  0.0001       0.5334 ***
+78                 ~~CWM_dbh         ~~log_DW_div_tot   0.1408         - 44     0.9104  0.1840       0.1408    
+79                 ~~CWM_dbh                ~~FDiv_DW   0.3024         - 44     2.0317  0.0243       0.3024   *
+80                ~~FDis_dbh           ~~log_DW_GBTGB   0.5094         - 44     3.7905  0.0002       0.5094 ***
+81                ~~FDis_dbh         ~~log_DW_div_tot   0.5461         - 44     4.1742  0.0001       0.5461 ***
+82                ~~FDis_dbh                ~~FDiv_DW   0.4866         - 44     3.5667  0.0005       0.4866 ***
+83              ~~FEve_TreMs           ~~log_TreMs_ab  -0.4342         - 44    -3.0860  0.0018      -0.4342  **
+84              ~~FEve_TreMs        ~~log_Concavities  -0.3716         - 44    -2.5626  0.0071      -0.3716  **
+85              ~~FEve_TreMs  ~~CWM_DW_type_substrate   0.3441         - 44     2.3467  0.0119       0.3441   *
+86              ~~FEve_TreMs ~~FDis_DW_type_substrate   0.3023         - 44     2.0310  0.0244       0.3023   *
+87              ~~FEve_TreMs               ~~CWM_ONTO  -0.2854         - 44    -1.9067  0.0318      -0.2854   *
+88              ~~log_LW_vol      ~~FDis_stade_saprox   0.3073         - 44     2.0680  0.0225       0.3073   *
+89              ~~log_DW_vol           ~~log_DW_dec34   0.8425         - 44    10.0162  0.0000       0.8425 ***
+90              ~~log_DW_vol            ~~log_DW_PBBM   0.7787         - 44     7.9469  0.0000       0.7787 ***
+91              ~~log_DW_vol           ~~log_DW_GBTGB   0.5455         - 44     4.1679  0.0001       0.5455 ***
+92              ~~log_DW_vol             ~~log_DW_BMS   0.5876         - 44     4.6505  0.0000       0.5876 ***
+93              ~~log_DW_vol             ~~log_DW_BMD   0.6835         - 44     5.9949  0.0000       0.6835 ***
+94              ~~log_DW_vol         ~~log_DW_div_tot   0.5974         - 44     4.7698  0.0000       0.5974 ***
+95              ~~log_DW_vol                ~~FRic_DW   0.2570         - 44     1.7031  0.0481       0.2570   *
+96              ~~log_DW_vol                ~~FDiv_DW   0.3946         - 44     2.7500  0.0044       0.3946  **
+97              ~~log_DW_vol        ~~log_FDis_statut   0.6684         - 44     5.7540  0.0000       0.6684 ***
+98              ~~log_DW_vol   ~~log_CWM_stade_saprox  -0.2063         - 44    -1.3501  0.0922      -0.2063    
+99              ~~log_DW_vol      ~~FDis_stade_saprox   0.3171         - 44     2.1412  0.0191       0.3171   *
+100           ~~log_DW_dec34            ~~log_DW_PBBM   0.6503         - 44     5.4819  0.0000       0.6503 ***
+101           ~~log_DW_dec34           ~~log_DW_GBTGB   0.3677         - 44     2.5318  0.0076       0.3677  **
+102           ~~log_DW_dec34             ~~log_DW_BMS   0.6172         - 44     5.0230  0.0000       0.6172 ***
+103           ~~log_DW_dec34             ~~log_DW_BMD   0.6447         - 44     5.4002  0.0000       0.6447 ***
+104           ~~log_DW_dec34         ~~log_DW_div_tot   0.3456         - 44     2.3584  0.0116       0.3456   *
+105           ~~log_DW_dec34        ~~log_FDis_statut   0.6148         - 44     4.9913  0.0000       0.6148 ***
+106           ~~log_DW_dec34   ~~log_CWM_stade_saprox   0.4011         - 44     2.8038  0.0038       0.4011  **
+107            ~~log_DW_PBBM             ~~log_DW_BMS   0.5233         - 44     3.9318  0.0002       0.5233 ***
+108            ~~log_DW_PBBM             ~~log_DW_BMD   0.5071         - 44     3.7672  0.0003       0.5071 ***
+109            ~~log_DW_PBBM         ~~log_DW_div_tot   0.3820         - 44     2.6470  0.0057       0.3820  **
+110            ~~log_DW_PBBM        ~~log_FDis_statut   0.6220         - 44     5.0868  0.0000       0.6220 ***
+111           ~~log_DW_GBTGB             ~~log_DW_BMD   0.3716         - 44     2.5630  0.0071       0.3716  **
+112           ~~log_DW_GBTGB         ~~log_DW_div_tot   0.5869         - 44     4.6409  0.0000       0.5869 ***
+113           ~~log_DW_GBTGB                ~~FRic_DW   0.2818         - 44     1.8810  0.0335       0.2818   *
+114           ~~log_DW_GBTGB                ~~FDiv_DW   0.5320         - 44     4.0235  0.0001       0.5320 ***
+115           ~~log_DW_GBTGB        ~~log_FDis_statut   0.3127         - 44     2.1078  0.0206       0.3127   *
+116           ~~log_DW_GBTGB      ~~FDis_stade_saprox   0.3933         - 44     2.7391  0.0045       0.3933  **
+117             ~~log_DW_BMS         ~~log_DW_div_tot   0.3770         - 44     2.6062  0.0064       0.3770  **
+118             ~~log_DW_BMS        ~~log_FDis_statut   0.6501         - 44     5.4785  0.0000       0.6501 ***
+119             ~~log_DW_BMS   ~~log_CWM_stade_saprox   0.1454         - 44     0.9408  0.1761       0.1454    
+120             ~~log_DW_BMD         ~~log_DW_div_tot   0.3184         - 44     2.1506  0.0187       0.3184   *
+121             ~~log_DW_BMD                ~~FRic_DW   0.3476         - 44     2.3736  0.0112       0.3476   *
+122             ~~log_DW_BMD                ~~FDiv_DW   0.3557         - 44     2.4367  0.0096       0.3557  **
+123             ~~log_DW_BMD        ~~log_FDis_statut   0.3375         - 44     2.2959  0.0134       0.3375   *
+124         ~~log_DW_div_tot                ~~FRic_DW   0.4319         - 44     3.0664  0.0019       0.4319  **
+125         ~~log_DW_div_tot                ~~FDiv_DW   0.7045         - 44     6.3555  0.0000       0.7045 ***
+126         ~~log_DW_div_tot   ~~log_CWM_stade_saprox  -0.4125         - 44    -2.8994  0.0030      -0.4125  **
+127         ~~log_DW_div_tot      ~~FDis_stade_saprox   0.5456         - 44     4.1691  0.0001       0.5456 ***
+128                ~~FRic_DW                ~~FDiv_DW   0.2552         - 44     1.6902  0.0493       0.2552   *
+129                ~~FRic_DW      ~~FDis_stade_saprox   0.2693         - 44     1.7904  0.0404       0.2693   *
+130   ~~log_CWM_stade_saprox      ~~FDis_stade_saprox  -0.8515         - 43   -10.2724  0.0000      -0.8515 ***
+131             ~~CWM_statut             ~~log_DW_vol  -0.2926         - 44    -1.9590  0.0285      -0.2926   *
+132           ~~log_DW_GBTGB           ~~log_DW_dec12   0.4160         - 44     2.9290  0.0028       0.4160  **
+133                ~~FDis_DW           ~~log_DW_dec12   0.4166         - 44     2.9340  0.0027       0.4166  **
+134      ~~FDis_stade_saprox           ~~log_DW_dec12   0.8978         - 44    13.0539  0.0000       0.8978 ***
+135             ~~CWM_statut           ~~log_DW_dec34  -0.2454         - 44    -1.6211  0.0563      -0.2454    
+136        ~~CWM_HUM_dry_wet             ~~log_DW_BMS  -0.3051         - 44    -2.0514  0.0233      -0.3051   *
+137                ~~FDiv_DW      ~~FDis_stade_saprox   0.4955         - 44     3.6523  0.0004       0.4955 ***
+138                ~~FEve_DW      ~~FDis_stade_saprox   0.4457         - 44     3.1885  0.0014       0.4457  **
+139              ~~FDis_ONTO                ~~CWM_POS   0.3929         - 44     2.7359  0.0046       0.3929  **
+140              ~~FDis_ONTO               ~~CWM_LIFE   0.4633         - 44     3.3480  0.0009       0.4633 ***
+141              ~~FDis_ONTO              ~~FDis_LIFE  -0.4144         - 44    -2.9158  0.0029      -0.4144  **
+142              ~~FDis_ONTO               ~~CWM_ONTO  -0.4659         - 44    -3.3711  0.0008      -0.4659 ***
+143           ~~log_TreMs_ab             ~~FDis_TreMs  -0.3557         - 44    -2.4373  0.0096      -0.3557  **
+144           ~~log_TreMs_ab  ~~CWM_DW_type_substrate  -0.1485         - 44    -0.9616  0.1709      -0.1485    
+145           ~~log_TreMs_ab ~~FDis_DW_type_substrate  -0.3781         - 44    -2.6153  0.0062      -0.3781  **
+146           ~~log_TreMs_ab           ~~log_FDis_POS  -0.3729         - 44    -2.5733  0.0069      -0.3729  **
+147           ~~log_TreMs_ab               ~~CWM_ONTO   0.3560         - 44     2.4396  0.0096       0.3560  **
+148          ~~log_TreMs_div             ~~FRic_TreMs   0.7291         - 44     6.8213  0.0000       0.7291 ***
+149             ~~FDiv_TreMs             ~~FDis_TreMs   0.6836         - 44     5.9967  0.0000       0.6836 ***
+150             ~~FDiv_TreMs  ~~CWM_DW_type_substrate   0.4813         - 44     3.5161  0.0005       0.4813 ***
+151             ~~FDiv_TreMs           ~~log_FDis_POS   0.4837         - 44     3.5387  0.0005       0.4837 ***
+152             ~~FDiv_TreMs        ~~CWM_HUM_dry_wet  -0.4118         - 44    -2.8932  0.0030      -0.4118  **
+153             ~~FDiv_TreMs       ~~FDis_HUM_dry_wet   0.5035         - 44     3.7311  0.0003       0.5035 ***
+154             ~~FDiv_TreMs               ~~CWM_ONTO  -0.4461         - 44    -3.1921  0.0014      -0.4461  **
+155             ~~FDiv_TreMs      ~~CWM_DW_saproxylic   0.5552         - 44     4.2745  0.0001       0.5552 ***
+156             ~~FDiv_TreMs  ~~CWM_DW_type_substrate   0.4813         - 44     3.5161  0.0005       0.4813 ***
+157             ~~FDiv_TreMs ~~FDis_DW_type_substrate   0.1031         - 44     0.6637  0.2553       0.1031    
+158             ~~FDiv_TreMs           ~~log_FDis_POS   0.4837         - 44     3.5387  0.0005       0.4837 ***
+159             ~~FDiv_TreMs        ~~CWM_HUM_dry_wet  -0.4118         - 44    -2.8932  0.0030      -0.4118  **
+160             ~~FDiv_TreMs       ~~FDis_HUM_dry_wet   0.5035         - 44     3.7311  0.0003       0.5035 ***
+161             ~~FDiv_TreMs               ~~CWM_ONTO  -0.4461         - 44    -3.1921  0.0014      -0.4461  **
+162             ~~FDiv_TreMs      ~~CWM_DW_saproxylic   0.5552         - 44     4.2745  0.0001       0.5552 ***
+163  ~~CWM_DW_type_substrate                ~~CWM_POS   0.3474         - 44     2.3720  0.0112       0.3474   *
+164  ~~CWM_DW_type_substrate           ~~log_FDis_POS   0.7788         - 44     7.9500  0.0000       0.7788 ***
+165  ~~CWM_DW_type_substrate        ~~CWM_HUM_dry_wet  -0.2898         - 44    -1.9385  0.0297      -0.2898   *
+166 ~~FDis_DW_type_substrate               ~~CWM_ONTO  -0.4492         - 44    -3.2194  0.0013      -0.4492  **
+167           ~~log_FDis_POS        ~~CWM_HUM_dry_wet  -0.3436         - 44    -2.3426  0.0120      -0.3436   *
+168           ~~log_FDis_POS       ~~FDis_HUM_dry_wet   0.2915         - 44     1.9512  0.0289       0.2915   *
+169           ~~log_FDis_POS               ~~CWM_ONTO  -0.4789         - 44    -3.4931  0.0006      -0.4789 ***
+170        ~~CWM_HUM_dry_wet      ~~CWM_DW_saproxylic  -0.2846         - 44    -1.9011  0.0322      -0.2846   *
+171       ~~FDis_HUM_dry_wet               ~~CWM_LIFE  -0.3307         - 44    -2.2436  0.0152      -0.3307   *
+172               ~~CWM_LIFE              ~~FDis_LIFE  -0.8668         - 44   -11.1287  0.0000      -0.8668 ***
+173               ~~CWM_ONTO      ~~CWM_DW_saproxylic  -0.4613         - 44    -3.3296  0.0009      -0.4613 ***
+174  ~~CWM_DW_type_substrate             ~~FDis_TreMs   0.6253         - 44     5.1307  0.0000       0.6253 ***
+175             ~~FDis_TreMs ~~FDis_DW_type_substrate   0.4534         - 44     3.2572  0.0011       0.4534  **
+176             ~~FDis_TreMs           ~~log_FDis_POS   0.7132         - 44     6.5151  0.0000       0.7132 ***
+177             ~~FDis_TreMs        ~~CWM_HUM_dry_wet  -0.2913         - 44    -1.9496  0.0290      -0.2913   *
+178             ~~FDis_TreMs       ~~FDis_HUM_dry_wet   0.5834         - 44     4.5999  0.0000       0.5834 ***
+179             ~~FDis_TreMs               ~~CWM_ONTO  -0.6696         - 44    -5.7735  0.0000      -0.6696 ***
+180             ~~FDis_TreMs      ~~CWM_DW_saproxylic   0.5378         - 44     4.0841  0.0001       0.5378 ***
+181           ~~log_DW_GBTGB             ~~log_LW_vol   0.4164         - 44     2.9322  0.0027       0.4164  **
+182         ~~log_DW_div_tot             ~~log_LW_vol   0.4291         - 44     3.0421  0.0020       0.4291  **
+183         ~~nb_TGB_All_sub             ~~log_LW_vol   0.4207         - 44     2.9695  0.0025       0.4207  **
+184                ~~FDis_DW      ~~FDis_stade_saprox   0.3714         - 44     2.5612  0.0071       0.3714  **
+185             ~~CWM_statut   ~~log_CWM_stade_saprox   0.0990         - 44     0.6368  0.2639       0.0990    
+186                ~~CWM_dbh   ~~log_CWM_stade_saprox  -0.1365         - 43    -0.8713  0.1944      -0.1365    
+187              ~~FDis_ONTO  ~~CWM_DW_type_substrate   0.3004         - 44     2.0169  0.0251       0.3004   *
+188                ~~CWM_dbh         ~~nb_TGB_All_sub   0.3740         - 44     2.5821  0.0067       0.3740  **
+189               ~~FDis_dbh         ~~nb_TGB_All_sub   0.4319         - 44     3.0661  0.0019       0.4319  **
+190               ~~CWM_ONTO  ~~CWM_DW_type_substrate  -0.3693         - 44    -2.5443  0.0074      -0.3693  **
+191             ~~log_DW_vol             ~~log_LW_vol   0.3825         - 44     2.6504  0.0057       0.3825  **
+192           ~~log_DW_dec12             ~~log_LW_vol   0.2936         - 44     1.9665  0.0280       0.2936   *
+193             ~~log_DW_BMD             ~~log_LW_vol   0.3841         - 44     2.6638  0.0055       0.3841  **
+194  ~~CWM_DW_type_substrate             ~~log_LW_vol  -0.1634         - 44    -1.0604  0.1476      -0.1634    
+195                ~~FEve_DW           ~~log_DW_dec12   0.3770         - 44     2.6060  0.0064       0.3770  **
+196                ~~FDis_DW           ~~log_DW_dec34   0.3888         - 44     2.7021  0.0050       0.3888  **
+197                ~~FDis_DW            ~~log_DW_PBBM   0.3400         - 44     2.3152  0.0128       0.3400   *
+198                ~~CWM_dbh            ~~log_DW_PBBM  -0.6337         - 44    -5.2450  0.0000      -0.6337 ***
+199                ~~FDis_DW             ~~log_DW_BMS   0.3377         - 44     2.2970  0.0134       0.3377   *
+200             ~~CWM_statut             ~~log_DW_BMS  -0.1691         - 44    -1.0987  0.1392      -0.1691    
+201         ~~nb_TGB_All_sub             ~~log_DW_BMD   0.3381         - 44     2.3000  0.0133       0.3381   *
+202             ~~CWM_statut                ~~FDiv_DW   0.0712         - 44     0.4572  0.3250       0.0712    
+203             ~~CWM_statut                ~~FEve_DW   0.1578         - 44     1.0231  0.1561       0.1578    
+204                ~~FRic_DW           ~~log_DW_dec12   0.3237         - 44     2.1905  0.0171       0.3237   *
+205           ~~log_FDis_POS ~~FDis_DW_type_substrate   0.3832         - 44     2.6568  0.0056       0.3832  **
+206 ~~FDis_DW_type_substrate                ~~CWM_POS   0.2238         - 44     1.4703  0.0746       0.2238    
+207          ~~log_TreMs_div      ~~CWM_DW_saproxylic   0.2710         - 44     1.8027  0.0394       0.2710   *
+208              ~~FDis_ONTO ~~FDis_DW_type_substrate   0.4052         - 44     2.8381  0.0035       0.4052  **
+209               ~~FDis_dbh   ~~log_CWM_stade_saprox  -0.3305         - 43    -2.2146  0.0163      -0.3305   *
+210        ~~log_FDis_statut             ~~CWM_statut  -0.4539         - 44    -3.2614  0.0011      -0.4539  **
+211               ~~CWM_ONTO                ~~FEve_DW  -0.3382         - 44    -2.3014  0.0133      -0.3382   *
+212                ~~FDiv_DW   ~~log_CWM_stade_saprox  -0.3633         - 44    -2.4971  0.0083      -0.3633  **
+213             ~~log_DW_BMD             ~~CWM_statut  -0.3086         - 44    -2.0772  0.0220      -0.3086   *
+214             ~~CWM_statut            ~~log_DW_PBBM  -0.3742         - 44    -2.5836  0.0067      -0.3742  **
+215               ~~FDis_dbh      ~~FDis_stade_saprox   0.3055         - 43     2.0290  0.0246       0.3055   *
