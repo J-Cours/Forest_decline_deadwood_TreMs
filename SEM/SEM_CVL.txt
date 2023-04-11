@@ -1,0 +1,552 @@
+Structural Equation Model of SEM_CVL 
+
+Call:
+  log_LW_vol ~ level_depe_G
+  log_DW_vol ~ level_depe_G
+  log_DW_dec12 ~ level_depe_G
+  log_DW_dec34 ~ level_depe_G
+  log_DW_PBBM ~ level_depe_G
+  log_DW_GBTGB ~ level_depe_G
+  log_DW_BMS ~ level_depe_G
+  log_DW_BMD ~ level_depe_G
+  log_DW_div_tot ~ level_depe_G
+  CWM_statut ~ level_depe_G
+  log_FDis_statut ~ level_depe_G
+  log_CWM_stade_saprox ~ level_depe_G
+  FDis_stade_saprox ~ level_depe_G
+  CWM_dbh ~ level_depe_G
+  FDis_dbh ~ level_depe_G
+  nb_TGB_All_sub ~ level_depe_G
+  log_TreMs_ab ~ level_depe_G + log_DW_div_tot
+  log_TreMs_div ~ nb_TGB_All_sub
+  FRic_TreMs ~ nb_TGB_All_sub + log_DW_div_tot
+  FEve_TreMs ~ level_depe_G + log_DW_vol + log_LW_vol + nb_TGB_All_sub
+  CWM_DW_type_substrate ~ level_depe_G
+  FDis_DW_type_substrate ~ level_depe_G
+  CWM_POS ~ level_depe_G
+  FDis_POS ~ level_depe_G
+  CWM_HUM_dry_wet ~ level_depe_G
+  FDis_HUM_dry_wet ~ log_DW_vol
+  CWM_LIFE ~ nb_TGB_All_sub
+  CWM_ONTO ~ level_depe_G
+  FDis_ONTO ~ level_depe_G
+  CWM_DW_saproxylic ~ level_depe_G
+
+    AIC      BIC
+ 1683.401   1754.02
+
+---
+Tests of directed separation:
+
+                                        Independ.Claim Test.Type DF Crit.Value P.Value    
+                    log_TreMs_div ~ level_depe_G + ...      coef 14     1.5574  0.1417    
+                       FRic_TreMs ~ level_depe_G + ...      coef 13    -0.7242  0.4818    
+                 FDis_HUM_dry_wet ~ level_depe_G + ...      coef 14    -1.0821  0.2975    
+                         CWM_LIFE ~ level_depe_G + ...      coef 14    -1.0166  0.3266    
+                         log_DW_vol ~ log_LW_vol + ...      coef 14     0.9997  0.3344    
+                       log_DW_dec12 ~ log_LW_vol + ...      coef 14     1.3910  0.1859    
+                       log_DW_dec34 ~ log_LW_vol + ...      coef 14     0.4394  0.6671    
+                        log_DW_PBBM ~ log_LW_vol + ...      coef 14    -1.1408  0.2731    
+                       log_DW_GBTGB ~ log_LW_vol + ...      coef 14     1.8577  0.0844    
+                         log_DW_BMS ~ log_LW_vol + ...      coef 14    -1.0576  0.3081    
+                         log_DW_BMD ~ log_LW_vol + ...      coef 14     1.7350  0.1047    
+                     log_DW_div_tot ~ log_LW_vol + ...      coef 14     0.1926  0.8500    
+                         CWM_statut ~ log_LW_vol + ...      coef 14    -0.7136  0.4872    
+                    log_FDis_statut ~ log_LW_vol + ...      coef 14     0.3299  0.7464    
+               log_CWM_stade_saprox ~ log_LW_vol + ...      coef 14    -0.9592  0.3537    
+                  FDis_stade_saprox ~ log_LW_vol + ...      coef 14     0.5977  0.5596    
+                            CWM_dbh ~ log_LW_vol + ...      coef 14     0.5037  0.6223    
+                           FDis_dbh ~ log_LW_vol + ...      coef 14     0.8274  0.4219    
+                     nb_TGB_All_sub ~ log_LW_vol + ...      coef 14     2.4894  0.0260   *
+              CWM_DW_type_substrate ~ log_LW_vol + ...      coef 14    -0.4741  0.6428    
+             FDis_DW_type_substrate ~ log_LW_vol + ...      coef 14    -0.6832  0.5056    
+                            CWM_POS ~ log_LW_vol + ...      coef 14     0.1645  0.8717    
+                           FDis_POS ~ log_LW_vol + ...      coef 14    -0.0929  0.9273    
+                    CWM_HUM_dry_wet ~ log_LW_vol + ...      coef 14     1.1821  0.2568    
+                           CWM_ONTO ~ log_LW_vol + ...      coef 14     0.5429  0.5958    
+                          FDis_ONTO ~ log_LW_vol + ...      coef 14    -0.4502  0.6594    
+                  CWM_DW_saproxylic ~ log_LW_vol + ...      coef 14     0.6048  0.5550    
+                       log_TreMs_ab ~ log_LW_vol + ...      coef 13     0.7970  0.4398    
+                      log_TreMs_div ~ log_LW_vol + ...      coef 13    -0.6334  0.5375    
+                         FRic_TreMs ~ log_LW_vol + ...      coef 12    -0.8916  0.3901    
+                   FDis_HUM_dry_wet ~ log_LW_vol + ...      coef 13    -2.6653  0.0194   *
+                           CWM_LIFE ~ log_LW_vol + ...      coef 13    -0.0851  0.9335    
+                       log_DW_dec12 ~ log_DW_vol + ...      coef 14     6.6709  0.0000 ***
+                       log_DW_dec34 ~ log_DW_vol + ...      coef 14     1.2489  0.2322    
+                        log_DW_PBBM ~ log_DW_vol + ...      coef 14     0.6797  0.5078    
+                       log_DW_GBTGB ~ log_DW_vol + ...      coef 14     3.3060  0.0052  **
+                         log_DW_BMS ~ log_DW_vol + ...      coef 14     0.3641  0.7212    
+                         log_DW_BMD ~ log_DW_vol + ...      coef 14     6.8194  0.0000 ***
+                     log_DW_div_tot ~ log_DW_vol + ...      coef 14     3.1538  0.0070  **
+                         CWM_statut ~ log_DW_vol + ...      coef 14    -2.3971  0.0310   *
+                    log_FDis_statut ~ log_DW_vol + ...      coef 14     3.7979  0.0020  **
+               log_CWM_stade_saprox ~ log_DW_vol + ...      coef 14     3.5471  0.0032  **
+                  FDis_stade_saprox ~ log_DW_vol + ...      coef 14     1.6153  0.1286    
+                            CWM_dbh ~ log_DW_vol + ...      coef 14     2.8196  0.0136   *
+                           FDis_dbh ~ log_DW_vol + ...      coef 14    -0.9530  0.3568    
+                     nb_TGB_All_sub ~ log_DW_vol + ...      coef 14     0.6131  0.5497    
+              CWM_DW_type_substrate ~ log_DW_vol + ...      coef 14     0.6447  0.5296    
+             FDis_DW_type_substrate ~ log_DW_vol + ...      coef 14     0.4979  0.6263    
+                            CWM_POS ~ log_DW_vol + ...      coef 14    -1.2948  0.2163    
+                           FDis_POS ~ log_DW_vol + ...      coef 14     1.5580  0.1415    
+                    CWM_HUM_dry_wet ~ log_DW_vol + ...      coef 14     0.8632  0.4025    
+                           CWM_ONTO ~ log_DW_vol + ...      coef 14    -0.7830  0.4466    
+                          FDis_ONTO ~ log_DW_vol + ...      coef 14     0.3307  0.7458    
+                  CWM_DW_saproxylic ~ log_DW_vol + ...      coef 14     0.3884  0.7036    
+                       log_TreMs_ab ~ log_DW_vol + ...      coef 13     0.5710  0.5777    
+                      log_TreMs_div ~ log_DW_vol + ...      coef 13     1.3109  0.2126    
+                         FRic_TreMs ~ log_DW_vol + ...      coef 12    -0.5854  0.5691    
+                           CWM_LIFE ~ log_DW_vol + ...      coef 13     0.7962  0.4402    
+                     log_DW_dec34 ~ log_DW_dec12 + ...      coef 14    -0.5743  0.5749    
+                      log_DW_PBBM ~ log_DW_dec12 + ...      coef 14    -0.0520  0.9593    
+                     log_DW_GBTGB ~ log_DW_dec12 + ...      coef 14     3.1442  0.0072  **
+                       log_DW_BMS ~ log_DW_dec12 + ...      coef 14    -1.6027  0.1313    
+                       log_DW_BMD ~ log_DW_dec12 + ...      coef 14    27.8210  0.0000 ***
+                   log_DW_div_tot ~ log_DW_dec12 + ...      coef 14     1.6428  0.1227    
+                       CWM_statut ~ log_DW_dec12 + ...      coef 14    -2.0914  0.0552    
+                  log_FDis_statut ~ log_DW_dec12 + ...      coef 14     2.2789  0.0389   *
+             log_CWM_stade_saprox ~ log_DW_dec12 + ...      coef 14     1.0470  0.3128    
+                FDis_stade_saprox ~ log_DW_dec12 + ...      coef 14     1.0333  0.3190    
+                          CWM_dbh ~ log_DW_dec12 + ...      coef 14     1.6648  0.1182    
+                         FDis_dbh ~ log_DW_dec12 + ...      coef 14    -1.2416  0.2348    
+                   nb_TGB_All_sub ~ log_DW_dec12 + ...      coef 14     0.5467  0.5932    
+            CWM_DW_type_substrate ~ log_DW_dec12 + ...      coef 14    -0.4369  0.6688    
+           FDis_DW_type_substrate ~ log_DW_dec12 + ...      coef 14    -0.2955  0.7719    
+                          CWM_POS ~ log_DW_dec12 + ...      coef 14    -0.6520  0.5249    
+                         FDis_POS ~ log_DW_dec12 + ...      coef 14     1.1212  0.2811    
+                  CWM_HUM_dry_wet ~ log_DW_dec12 + ...      coef 14     0.4233  0.6785    
+                         CWM_ONTO ~ log_DW_dec12 + ...      coef 14    -0.5736  0.5753    
+                        FDis_ONTO ~ log_DW_dec12 + ...      coef 14    -0.1478  0.8846    
+                CWM_DW_saproxylic ~ log_DW_dec12 + ...      coef 14     0.5544  0.5881    
+                     log_TreMs_ab ~ log_DW_dec12 + ...      coef 13     0.5899  0.5654    
+                    log_TreMs_div ~ log_DW_dec12 + ...      coef 13     0.3042  0.7658    
+                       FRic_TreMs ~ log_DW_dec12 + ...      coef 12    -0.5294  0.6062    
+                       FEve_TreMs ~ log_DW_dec12 + ...      coef 11     0.7162  0.4888    
+                 FDis_HUM_dry_wet ~ log_DW_dec12 + ...      coef 13    -0.5515  0.5906    
+                         CWM_LIFE ~ log_DW_dec12 + ...      coef 13    -0.0540  0.9577    
+                      log_DW_PBBM ~ log_DW_dec34 + ...      coef 14     1.2925  0.2171    
+                     log_DW_GBTGB ~ log_DW_dec34 + ...      coef 14     0.1716  0.8662    
+                       log_DW_BMS ~ log_DW_dec34 + ...      coef 14     4.9701  0.0002 ***
+                       log_DW_BMD ~ log_DW_dec34 + ...      coef 14    -0.1735  0.8647    
+                   log_DW_div_tot ~ log_DW_dec34 + ...      coef 14     2.4251  0.0294   *
+                       CWM_statut ~ log_DW_dec34 + ...      coef 14    -1.3211  0.2077    
+                  log_FDis_statut ~ log_DW_dec34 + ...      coef 14     2.1399  0.0505    
+             log_CWM_stade_saprox ~ log_DW_dec34 + ...      coef 14     1.5382  0.1463    
+                FDis_stade_saprox ~ log_DW_dec34 + ...      coef 14     3.2582  0.0057  **
+                          CWM_dbh ~ log_DW_dec34 + ...      coef 14     0.4963  0.6274    
+                         FDis_dbh ~ log_DW_dec34 + ...      coef 14     2.9918  0.0097  **
+                   nb_TGB_All_sub ~ log_DW_dec34 + ...      coef 14     0.4267  0.6761    
+            CWM_DW_type_substrate ~ log_DW_dec34 + ...      coef 14     1.5104  0.1532    
+           FDis_DW_type_substrate ~ log_DW_dec34 + ...      coef 14     1.1701  0.2615    
+                          CWM_POS ~ log_DW_dec34 + ...      coef 14    -1.2267  0.2402    
+                         FDis_POS ~ log_DW_dec34 + ...      coef 14     0.2292  0.8220    
+                  CWM_HUM_dry_wet ~ log_DW_dec34 + ...      coef 14     0.9246  0.3708    
+                         CWM_ONTO ~ log_DW_dec34 + ...      coef 14     0.5105  0.6177    
+                        FDis_ONTO ~ log_DW_dec34 + ...      coef 14     1.1030  0.2886    
+                CWM_DW_saproxylic ~ log_DW_dec34 + ...      coef 14    -0.9423  0.3620    
+                     log_TreMs_ab ~ log_DW_dec34 + ...      coef 13    -0.1118  0.9127    
+                    log_TreMs_div ~ log_DW_dec34 + ...      coef 13     1.6676  0.1193    
+                       FRic_TreMs ~ log_DW_dec34 + ...      coef 12     0.2071  0.8394    
+                       FEve_TreMs ~ log_DW_dec34 + ...      coef 11    -0.4948  0.6304    
+                 FDis_HUM_dry_wet ~ log_DW_dec34 + ...      coef 13    -0.0650  0.9492    
+                         CWM_LIFE ~ log_DW_dec34 + ...      coef 13     1.9849  0.0687    
+                      log_DW_GBTGB ~ log_DW_PBBM + ...      coef 14    -2.2965  0.0376   *
+                        log_DW_BMS ~ log_DW_PBBM + ...      coef 14     3.1411  0.0072  **
+                        log_DW_BMD ~ log_DW_PBBM + ...      coef 14     0.4685  0.6466    
+                    log_DW_div_tot ~ log_DW_PBBM + ...      coef 14     1.6428  0.1227    
+                        CWM_statut ~ log_DW_PBBM + ...      coef 14    -1.5541  0.1425    
+                   log_FDis_statut ~ log_DW_PBBM + ...      coef 14     2.5052  0.0252   *
+              log_CWM_stade_saprox ~ log_DW_PBBM + ...      coef 14     1.6183  0.1279    
+                 FDis_stade_saprox ~ log_DW_PBBM + ...      coef 14     2.8432  0.0130   *
+                           CWM_dbh ~ log_DW_PBBM + ...      coef 14    -0.8046  0.4345    
+                          FDis_dbh ~ log_DW_PBBM + ...      coef 14    -0.2772  0.7857    
+                    nb_TGB_All_sub ~ log_DW_PBBM + ...      coef 14    -1.0391  0.3164    
+             CWM_DW_type_substrate ~ log_DW_PBBM + ...      coef 14     1.3659  0.1935    
+            FDis_DW_type_substrate ~ log_DW_PBBM + ...      coef 14     1.0351  0.3182    
+                           CWM_POS ~ log_DW_PBBM + ...      coef 14    -0.8502  0.4095    
+                          FDis_POS ~ log_DW_PBBM + ...      coef 14     1.1383  0.2741    
+                   CWM_HUM_dry_wet ~ log_DW_PBBM + ...      coef 14    -0.2196  0.8293    
+                          CWM_ONTO ~ log_DW_PBBM + ...      coef 14     0.1877  0.8538    
+                         FDis_ONTO ~ log_DW_PBBM + ...      coef 14     0.4677  0.6472    
+                 CWM_DW_saproxylic ~ log_DW_PBBM + ...      coef 14    -0.3983  0.6964    
+                      log_TreMs_ab ~ log_DW_PBBM + ...      coef 13     0.2125  0.8350    
+                     log_TreMs_div ~ log_DW_PBBM + ...      coef 13     1.5158  0.1535    
+                        FRic_TreMs ~ log_DW_PBBM + ...      coef 12    -0.2943  0.7735    
+                        FEve_TreMs ~ log_DW_PBBM + ...      coef 11     0.4256  0.6786    
+                  FDis_HUM_dry_wet ~ log_DW_PBBM + ...      coef 13     0.3949  0.6993    
+                          CWM_LIFE ~ log_DW_PBBM + ...      coef 13     0.9180  0.3753    
+                       log_DW_BMS ~ log_DW_GBTGB + ...      coef 14    -1.2824  0.2205    
+                       log_DW_BMD ~ log_DW_GBTGB + ...      coef 14     3.5497  0.0032  **
+                   log_DW_div_tot ~ log_DW_GBTGB + ...      coef 14     1.6472  0.1218    
+                       CWM_statut ~ log_DW_GBTGB + ...      coef 14    -1.0900  0.2941    
+                  log_FDis_statut ~ log_DW_GBTGB + ...      coef 14     1.4146  0.1790    
+             log_CWM_stade_saprox ~ log_DW_GBTGB + ...      coef 14     1.1056  0.2875    
+                FDis_stade_saprox ~ log_DW_GBTGB + ...      coef 14     0.0910  0.9288    
+                          CWM_dbh ~ log_DW_GBTGB + ...      coef 14     3.7299  0.0022  **
+                         FDis_dbh ~ log_DW_GBTGB + ...      coef 14     0.6148  0.5485    
+                   nb_TGB_All_sub ~ log_DW_GBTGB + ...      coef 14     0.9708  0.3481    
+            CWM_DW_type_substrate ~ log_DW_GBTGB + ...      coef 14     0.5025  0.6231    
+           FDis_DW_type_substrate ~ log_DW_GBTGB + ...      coef 14     0.3159  0.7567    
+                          CWM_POS ~ log_DW_GBTGB + ...      coef 14    -0.5406  0.5973    
+                         FDis_POS ~ log_DW_GBTGB + ...      coef 14     0.1998  0.8445    
+                  CWM_HUM_dry_wet ~ log_DW_GBTGB + ...      coef 14     1.3988  0.1836    
+                         CWM_ONTO ~ log_DW_GBTGB + ...      coef 14    -0.4354  0.6699    
+                        FDis_ONTO ~ log_DW_GBTGB + ...      coef 14     0.0012  0.9991    
+                CWM_DW_saproxylic ~ log_DW_GBTGB + ...      coef 14     0.6035  0.5558    
+                     log_TreMs_ab ~ log_DW_GBTGB + ...      coef 13     0.1366  0.8934    
+                    log_TreMs_div ~ log_DW_GBTGB + ...      coef 13     0.1353  0.8944    
+                       FRic_TreMs ~ log_DW_GBTGB + ...      coef 12     0.2528  0.8047    
+                       FEve_TreMs ~ log_DW_GBTGB + ...      coef 11    -0.1425  0.8892    
+                 FDis_HUM_dry_wet ~ log_DW_GBTGB + ...      coef 13    -1.3190  0.2099    
+                         CWM_LIFE ~ log_DW_GBTGB + ...      coef 13     0.4944  0.6293    
+                         log_DW_BMD ~ log_DW_BMS + ...      coef 14    -1.4253  0.1760    
+                     log_DW_div_tot ~ log_DW_BMS + ...      coef 14     1.1228  0.2804    
+                         CWM_statut ~ log_DW_BMS + ...      coef 14    -1.5269  0.1491    
+                    log_FDis_statut ~ log_DW_BMS + ...      coef 14     2.1461  0.0499   *
+               log_CWM_stade_saprox ~ log_DW_BMS + ...      coef 14     1.5489  0.1437    
+                  FDis_stade_saprox ~ log_DW_BMS + ...      coef 14     1.8152  0.0910    
+                            CWM_dbh ~ log_DW_BMS + ...      coef 14    -0.2135  0.8341    
+                           FDis_dbh ~ log_DW_BMS + ...      coef 14     0.9940  0.3371    
+                     nb_TGB_All_sub ~ log_DW_BMS + ...      coef 14    -0.2799  0.7837    
+              CWM_DW_type_substrate ~ log_DW_BMS + ...      coef 14     1.7547  0.1012    
+             FDis_DW_type_substrate ~ log_DW_BMS + ...      coef 14     1.2097  0.2464    
+                            CWM_POS ~ log_DW_BMS + ...      coef 14    -0.7972  0.4387    
+                           FDis_POS ~ log_DW_BMS + ...      coef 14    -0.1733  0.8649    
+                    CWM_HUM_dry_wet ~ log_DW_BMS + ...      coef 14     0.5039  0.6222    
+                           CWM_ONTO ~ log_DW_BMS + ...      coef 14    -0.1684  0.8687    
+                          FDis_ONTO ~ log_DW_BMS + ...      coef 14     0.9349  0.3657    
+                  CWM_DW_saproxylic ~ log_DW_BMS + ...      coef 14    -0.5395  0.5980    
+                       log_TreMs_ab ~ log_DW_BMS + ...      coef 13    -0.7976  0.4395    
+                      log_TreMs_div ~ log_DW_BMS + ...      coef 13     1.6491  0.1231    
+                         FRic_TreMs ~ log_DW_BMS + ...      coef 12     0.8935  0.3892    
+                         FEve_TreMs ~ log_DW_BMS + ...      coef 11    -0.3867  0.7063    
+                   FDis_HUM_dry_wet ~ log_DW_BMS + ...      coef 13     0.6743  0.5119    
+                           CWM_LIFE ~ log_DW_BMS + ...      coef 13     1.6630  0.1202    
+                     log_DW_div_tot ~ log_DW_BMD + ...      coef 14     1.9176  0.0758    
+                         CWM_statut ~ log_DW_BMD + ...      coef 14    -1.9928  0.0662    
+                    log_FDis_statut ~ log_DW_BMD + ...      coef 14     2.2743  0.0392   *
+               log_CWM_stade_saprox ~ log_DW_BMD + ...      coef 14     1.0703  0.3026    
+                  FDis_stade_saprox ~ log_DW_BMD + ...      coef 14     1.3395  0.2017    
+                            CWM_dbh ~ log_DW_BMD + ...      coef 14     1.9687  0.0691    
+                           FDis_dbh ~ log_DW_BMD + ...      coef 14    -0.7262  0.4797    
+                     nb_TGB_All_sub ~ log_DW_BMD + ...      coef 14     0.6838  0.5053    
+              CWM_DW_type_substrate ~ log_DW_BMD + ...      coef 14    -0.2138  0.8338    
+             FDis_DW_type_substrate ~ log_DW_BMD + ...      coef 14    -0.1598  0.8753    
+                            CWM_POS ~ log_DW_BMD + ...      coef 14    -0.6448  0.5295    
+                           FDis_POS ~ log_DW_BMD + ...      coef 14     1.1169  0.2828    
+                    CWM_HUM_dry_wet ~ log_DW_BMD + ...      coef 14     0.4995  0.6252    
+                           CWM_ONTO ~ log_DW_BMD + ...      coef 14    -0.4283  0.6749    
+                          FDis_ONTO ~ log_DW_BMD + ...      coef 14    -0.1043  0.9184    
+                  CWM_DW_saproxylic ~ log_DW_BMD + ...      coef 14     0.5298  0.6046    
+                       log_TreMs_ab ~ log_DW_BMD + ...      coef 13     0.4678  0.6477    
+                      log_TreMs_div ~ log_DW_BMD + ...      coef 13     0.3291  0.7473    
+                         FRic_TreMs ~ log_DW_BMD + ...      coef 12    -0.7369  0.4753    
+                         FEve_TreMs ~ log_DW_BMD + ...      coef 11     0.6866  0.5066    
+                   FDis_HUM_dry_wet ~ log_DW_BMD + ...      coef 13    -1.0042  0.3336    
+                           CWM_LIFE ~ log_DW_BMD + ...      coef 13     0.0534  0.9582    
+                     CWM_statut ~ log_DW_div_tot + ...      coef 14    -0.4867  0.6340    
+                log_FDis_statut ~ log_DW_div_tot + ...      coef 14     2.0366  0.0611    
+           log_CWM_stade_saprox ~ log_DW_div_tot + ...      coef 14     5.0749  0.0002 ***
+              FDis_stade_saprox ~ log_DW_div_tot + ...      coef 14     3.5121  0.0035  **
+                        CWM_dbh ~ log_DW_div_tot + ...      coef 14     2.2814  0.0387   *
+                       FDis_dbh ~ log_DW_div_tot + ...      coef 14     1.8517  0.0853    
+                 nb_TGB_All_sub ~ log_DW_div_tot + ...      coef 14    -0.7771  0.4500    
+          CWM_DW_type_substrate ~ log_DW_div_tot + ...      coef 14     0.7032  0.4935    
+         FDis_DW_type_substrate ~ log_DW_div_tot + ...      coef 14     0.7192  0.4839    
+                        CWM_POS ~ log_DW_div_tot + ...      coef 14    -1.7451  0.1029    
+                       FDis_POS ~ log_DW_div_tot + ...      coef 14     2.1282  0.0516    
+                CWM_HUM_dry_wet ~ log_DW_div_tot + ...      coef 14     1.2822  0.2206    
+                       CWM_ONTO ~ log_DW_div_tot + ...      coef 14     0.0875  0.9315    
+                      FDis_ONTO ~ log_DW_div_tot + ...      coef 14     0.1988  0.8453    
+              CWM_DW_saproxylic ~ log_DW_div_tot + ...      coef 14    -0.0958  0.9250    
+                  log_TreMs_div ~ log_DW_div_tot + ...      coef 13     2.1123  0.0546    
+                     FEve_TreMs ~ log_DW_div_tot + ...      coef 11     0.3868  0.7063    
+               FDis_HUM_dry_wet ~ log_DW_div_tot + ...      coef 13     0.5903  0.5651    
+                       CWM_LIFE ~ log_DW_div_tot + ...      coef 13     1.2885  0.2200    
+                    log_FDis_statut ~ CWM_statut + ...      coef 14   -10.1120  0.0000 ***
+               log_CWM_stade_saprox ~ CWM_statut + ...      coef 14     0.2829  0.7814    
+                  FDis_stade_saprox ~ CWM_statut + ...      coef 14    -1.3920  0.1856    
+                            CWM_dbh ~ CWM_statut + ...      coef 14     0.6461  0.5287    
+                           FDis_dbh ~ CWM_statut + ...      coef 14     1.2950  0.2163    
+                     nb_TGB_All_sub ~ CWM_statut + ...      coef 14    -0.7697  0.4543    
+              CWM_DW_type_substrate ~ CWM_statut + ...      coef 14    -1.0000  0.3343    
+             FDis_DW_type_substrate ~ CWM_statut + ...      coef 14    -0.8485  0.4104    
+                            CWM_POS ~ CWM_statut + ...      coef 14     1.3267  0.2058    
+                           FDis_POS ~ CWM_statut + ...      coef 14     0.2898  0.7762    
+                    CWM_HUM_dry_wet ~ CWM_statut + ...      coef 14    -0.1561  0.8782    
+                           CWM_ONTO ~ CWM_statut + ...      coef 14     0.2020  0.8428    
+                          FDis_ONTO ~ CWM_statut + ...      coef 14    -0.7927  0.4412    
+                  CWM_DW_saproxylic ~ CWM_statut + ...      coef 14     0.6659  0.5163    
+                       log_TreMs_ab ~ CWM_statut + ...      coef 13    -1.7772  0.0989    
+                      log_TreMs_div ~ CWM_statut + ...      coef 13    -0.8143  0.4301    
+                         FRic_TreMs ~ CWM_statut + ...      coef 12    -1.1874  0.2580    
+                         FEve_TreMs ~ CWM_statut + ...      coef 11     0.1269  0.9013    
+                   FDis_HUM_dry_wet ~ CWM_statut + ...      coef 13     0.5319  0.6038    
+                           CWM_LIFE ~ CWM_statut + ...      coef 13    -1.2100  0.2478    
+          log_CWM_stade_saprox ~ log_FDis_statut + ...      coef 14     1.0430  0.3146    
+             FDis_stade_saprox ~ log_FDis_statut + ...      coef 14     2.7329  0.0162   *
+                       CWM_dbh ~ log_FDis_statut + ...      coef 14     0.0904  0.9292    
+                      FDis_dbh ~ log_FDis_statut + ...      coef 14    -0.7566  0.4618    
+                nb_TGB_All_sub ~ log_FDis_statut + ...      coef 14     0.6405  0.5322    
+         CWM_DW_type_substrate ~ log_FDis_statut + ...      coef 14     1.4594  0.1665    
+        FDis_DW_type_substrate ~ log_FDis_statut + ...      coef 14     1.2225  0.2417    
+                       CWM_POS ~ log_FDis_statut + ...      coef 14    -1.6758  0.1160    
+                      FDis_POS ~ log_FDis_statut + ...      coef 14     0.1662  0.8704    
+               CWM_HUM_dry_wet ~ log_FDis_statut + ...      coef 14     0.4214  0.6798    
+                      CWM_ONTO ~ log_FDis_statut + ...      coef 14    -0.3448  0.7354    
+                     FDis_ONTO ~ log_FDis_statut + ...      coef 14     0.8736  0.3971    
+             CWM_DW_saproxylic ~ log_FDis_statut + ...      coef 14    -0.5225  0.6095    
+                  log_TreMs_ab ~ log_FDis_statut + ...      coef 13     1.4156  0.1804    
+                 log_TreMs_div ~ log_FDis_statut + ...      coef 13     1.4614  0.1677    
+                    FRic_TreMs ~ log_FDis_statut + ...      coef 12     1.0381  0.3197    
+                    FEve_TreMs ~ log_FDis_statut + ...      coef 11    -0.2099  0.8376    
+              FDis_HUM_dry_wet ~ log_FDis_statut + ...      coef 13    -0.2307  0.8211    
+                      CWM_LIFE ~ log_FDis_statut + ...      coef 13     1.3905  0.1877    
+        FDis_stade_saprox ~ log_CWM_stade_saprox + ...      coef 14     0.3937  0.6997    
+                  CWM_dbh ~ log_CWM_stade_saprox + ...      coef 14     3.6233  0.0028  **
+                 FDis_dbh ~ log_CWM_stade_saprox + ...      coef 14    -0.2289  0.8223    
+           nb_TGB_All_sub ~ log_CWM_stade_saprox + ...      coef 14    -1.0106  0.3293    
+    CWM_DW_type_substrate ~ log_CWM_stade_saprox + ...      coef 14     0.0980  0.9233    
+   FDis_DW_type_substrate ~ log_CWM_stade_saprox + ...      coef 14    -0.0376  0.9706    
+                  CWM_POS ~ log_CWM_stade_saprox + ...      coef 14    -1.0150  0.3273    
+                 FDis_POS ~ log_CWM_stade_saprox + ...      coef 14     1.6464  0.1219    
+          CWM_HUM_dry_wet ~ log_CWM_stade_saprox + ...      coef 14     1.7427  0.1033    
+                 CWM_ONTO ~ log_CWM_stade_saprox + ...      coef 14    -1.1875  0.2548    
+                FDis_ONTO ~ log_CWM_stade_saprox + ...      coef 14     0.2970  0.7709    
+        CWM_DW_saproxylic ~ log_CWM_stade_saprox + ...      coef 14     0.4827  0.6368    
+             log_TreMs_ab ~ log_CWM_stade_saprox + ...      coef 13    -0.8829  0.3933    
+            log_TreMs_div ~ log_CWM_stade_saprox + ...      coef 13     1.9337  0.0752    
+               FRic_TreMs ~ log_CWM_stade_saprox + ...      coef 12    -0.3731  0.7156    
+               FEve_TreMs ~ log_CWM_stade_saprox + ...      coef 11     0.0431  0.9664    
+         FDis_HUM_dry_wet ~ log_CWM_stade_saprox + ...      coef 13     1.4888  0.1604    
+                 CWM_LIFE ~ log_CWM_stade_saprox + ...      coef 13     1.1828  0.2581    
+                     CWM_dbh ~ FDis_stade_saprox + ...      coef 14    -0.3545  0.7282    
+                    FDis_dbh ~ FDis_stade_saprox + ...      coef 14     2.2979  0.0375   *
+              nb_TGB_All_sub ~ FDis_stade_saprox + ...      coef 14     0.4486  0.6606    
+       CWM_DW_type_substrate ~ FDis_stade_saprox + ...      coef 14     1.5760  0.1373    
+      FDis_DW_type_substrate ~ FDis_stade_saprox + ...      coef 14     1.3979  0.1839    
+                     CWM_POS ~ FDis_stade_saprox + ...      coef 14    -0.6461  0.5287    
+                    FDis_POS ~ FDis_stade_saprox + ...      coef 14     0.3326  0.7443    
+             CWM_HUM_dry_wet ~ FDis_stade_saprox + ...      coef 14    -0.6875  0.5030    
+                    CWM_ONTO ~ FDis_stade_saprox + ...      coef 14     0.6565  0.5222    
+                   FDis_ONTO ~ FDis_stade_saprox + ...      coef 14     0.0321  0.9748    
+           CWM_DW_saproxylic ~ FDis_stade_saprox + ...      coef 14    -0.4065  0.6905    
+                log_TreMs_ab ~ FDis_stade_saprox + ...      coef 13     0.2913  0.7754    
+               log_TreMs_div ~ FDis_stade_saprox + ...      coef 13     1.4278  0.1769    
+                  FRic_TreMs ~ FDis_stade_saprox + ...      coef 12     0.5114  0.6184    
+                  FEve_TreMs ~ FDis_stade_saprox + ...      coef 11    -0.1454  0.8870    
+            FDis_HUM_dry_wet ~ FDis_stade_saprox + ...      coef 13     0.1743  0.8643    
+                    CWM_LIFE ~ FDis_stade_saprox + ...      coef 13     0.2157  0.8326    
+                              FDis_dbh ~ CWM_dbh + ...      coef 14     1.0929  0.2929    
+                        nb_TGB_All_sub ~ CWM_dbh + ...      coef 14     0.4512  0.6587    
+                 CWM_DW_type_substrate ~ CWM_dbh + ...      coef 14     0.4069  0.6902    
+                FDis_DW_type_substrate ~ CWM_dbh + ...      coef 14     0.1621  0.8735    
+                               CWM_POS ~ CWM_dbh + ...      coef 14     0.0395  0.9691    
+                              FDis_POS ~ CWM_dbh + ...      coef 14     0.6870  0.5033    
+                       CWM_HUM_dry_wet ~ CWM_dbh + ...      coef 14     1.6526  0.1206    
+                              CWM_ONTO ~ CWM_dbh + ...      coef 14    -0.7738  0.4519    
+                             FDis_ONTO ~ CWM_dbh + ...      coef 14     0.0177  0.9862    
+                     CWM_DW_saproxylic ~ CWM_dbh + ...      coef 14     1.1377  0.2743    
+                          log_TreMs_ab ~ CWM_dbh + ...      coef 13    -2.1321  0.0527    
+                         log_TreMs_div ~ CWM_dbh + ...      coef 13     0.4614  0.6522    
+                            FRic_TreMs ~ CWM_dbh + ...      coef 12    -0.8445  0.4149    
+                            FEve_TreMs ~ CWM_dbh + ...      coef 11     0.2131  0.8351    
+                      FDis_HUM_dry_wet ~ CWM_dbh + ...      coef 13    -0.6699  0.5146    
+                              CWM_LIFE ~ CWM_dbh + ...      coef 13     0.3715  0.7162    
+                       nb_TGB_All_sub ~ FDis_dbh + ...      coef 14     0.2067  0.8392    
+                CWM_DW_type_substrate ~ FDis_dbh + ...      coef 14     1.2199  0.2427    
+               FDis_DW_type_substrate ~ FDis_dbh + ...      coef 14     0.7559  0.4622    
+                              CWM_POS ~ FDis_dbh + ...      coef 14     0.1637  0.8723    
+                             FDis_POS ~ FDis_dbh + ...      coef 14    -0.0238  0.9814    
+                      CWM_HUM_dry_wet ~ FDis_dbh + ...      coef 14     0.4152  0.6843    
+                             CWM_ONTO ~ FDis_dbh + ...      coef 14     1.4158  0.1787    
+                            FDis_ONTO ~ FDis_dbh + ...      coef 14     0.0084  0.9934    
+                    CWM_DW_saproxylic ~ FDis_dbh + ...      coef 14    -0.2248  0.8254    
+                         log_TreMs_ab ~ FDis_dbh + ...      coef 13    -1.1724  0.2621    
+                        log_TreMs_div ~ FDis_dbh + ...      coef 13     0.1803  0.8597    
+                           FRic_TreMs ~ FDis_dbh + ...      coef 12    -0.5275  0.6075    
+                           FEve_TreMs ~ FDis_dbh + ...      coef 11     0.2006  0.8447    
+                     FDis_HUM_dry_wet ~ FDis_dbh + ...      coef 13    -1.1800  0.2591    
+                             CWM_LIFE ~ FDis_dbh + ...      coef 13     0.5310  0.6043    
+          CWM_DW_type_substrate ~ nb_TGB_All_sub + ...      coef 14     0.9262  0.3700    
+         FDis_DW_type_substrate ~ nb_TGB_All_sub + ...      coef 14     1.5423  0.1453    
+                        CWM_POS ~ nb_TGB_All_sub + ...      coef 14    -1.0470  0.3128    
+                       FDis_POS ~ nb_TGB_All_sub + ...      coef 14     0.8377  0.4163    
+                CWM_HUM_dry_wet ~ nb_TGB_All_sub + ...      coef 14    -0.2217  0.8278    
+                       CWM_ONTO ~ nb_TGB_All_sub + ...      coef 14     1.3475  0.1992    
+                      FDis_ONTO ~ nb_TGB_All_sub + ...      coef 14     1.4148  0.1790    
+              CWM_DW_saproxylic ~ nb_TGB_All_sub + ...      coef 14    -0.9143  0.3760    
+                   log_TreMs_ab ~ nb_TGB_All_sub + ...      coef 13    -0.0195  0.9848    
+               FDis_HUM_dry_wet ~ nb_TGB_All_sub + ...      coef 13    -1.6468  0.1235    
+  FDis_DW_type_substrate ~ CWM_DW_type_substrate + ...      coef 14     7.5680  0.0000 ***
+                 CWM_POS ~ CWM_DW_type_substrate + ...      coef 14    -0.6398  0.5326    
+                FDis_POS ~ CWM_DW_type_substrate + ...      coef 14     0.1233  0.9036    
+         CWM_HUM_dry_wet ~ CWM_DW_type_substrate + ...      coef 14    -1.8442  0.0864    
+                CWM_ONTO ~ CWM_DW_type_substrate + ...      coef 14     1.1270  0.2787    
+               FDis_ONTO ~ CWM_DW_type_substrate + ...      coef 14     0.9396  0.3633    
+       CWM_DW_saproxylic ~ CWM_DW_type_substrate + ...      coef 14    -0.8050  0.4343    
+            log_TreMs_ab ~ CWM_DW_type_substrate + ...      coef 13    -0.9007  0.3841    
+           log_TreMs_div ~ CWM_DW_type_substrate + ...      coef 13     2.3446  0.0356   *
+              FRic_TreMs ~ CWM_DW_type_substrate + ...      coef 12     1.2452  0.2368    
+              FEve_TreMs ~ CWM_DW_type_substrate + ...      coef 11     0.3757  0.7143    
+        FDis_HUM_dry_wet ~ CWM_DW_type_substrate + ...      coef 13     0.2348  0.8180    
+                CWM_LIFE ~ CWM_DW_type_substrate + ...      coef 13     0.9662  0.3516    
+                CWM_POS ~ FDis_DW_type_substrate + ...      coef 14    -1.8858  0.0802    
+               FDis_POS ~ FDis_DW_type_substrate + ...      coef 14     1.2620  0.2276    
+        CWM_HUM_dry_wet ~ FDis_DW_type_substrate + ...      coef 14    -1.8381  0.0874    
+               CWM_ONTO ~ FDis_DW_type_substrate + ...      coef 14     2.6961  0.0174   *
+              FDis_ONTO ~ FDis_DW_type_substrate + ...      coef 14     2.4971  0.0256   *
+      CWM_DW_saproxylic ~ FDis_DW_type_substrate + ...      coef 14    -2.5063  0.0252   *
+           log_TreMs_ab ~ FDis_DW_type_substrate + ...      coef 13    -0.4089  0.6893    
+          log_TreMs_div ~ FDis_DW_type_substrate + ...      coef 13     4.0649  0.0013  **
+             FRic_TreMs ~ FDis_DW_type_substrate + ...      coef 12     2.0233  0.0659    
+             FEve_TreMs ~ FDis_DW_type_substrate + ...      coef 11     1.3136  0.2157    
+       FDis_HUM_dry_wet ~ FDis_DW_type_substrate + ...      coef 13     0.2788  0.7848    
+               CWM_LIFE ~ FDis_DW_type_substrate + ...      coef 13     1.7482  0.1040    
+                              FDis_POS ~ CWM_POS + ...      coef 14    -6.3578  0.0000 ***
+                       CWM_HUM_dry_wet ~ CWM_POS + ...      coef 14    -1.3283  0.2053    
+                              CWM_ONTO ~ CWM_POS + ...      coef 14    -2.1958  0.0455   *
+                             FDis_ONTO ~ CWM_POS + ...      coef 14    -5.8442  0.0000 ***
+                     CWM_DW_saproxylic ~ CWM_POS + ...      coef 14     4.3521  0.0007 ***
+                          log_TreMs_ab ~ CWM_POS + ...      coef 13    -1.2661  0.2277    
+                         log_TreMs_div ~ CWM_POS + ...      coef 13    -2.6155  0.0214   *
+                            FRic_TreMs ~ CWM_POS + ...      coef 12    -1.9313  0.0774    
+                            FEve_TreMs ~ CWM_POS + ...      coef 11    -1.4486  0.1753    
+                      FDis_HUM_dry_wet ~ CWM_POS + ...      coef 13    -0.9197  0.3745    
+                              CWM_LIFE ~ CWM_POS + ...      coef 13    -5.6969  0.0001 ***
+                      CWM_HUM_dry_wet ~ FDis_POS + ...      coef 14     1.0425  0.3148    
+                             CWM_ONTO ~ FDis_POS + ...      coef 14     1.8991  0.0784    
+                            FDis_ONTO ~ FDis_POS + ...      coef 14     3.9463  0.0015  **
+                    CWM_DW_saproxylic ~ FDis_POS + ...      coef 14    -2.5507  0.0231   *
+                         log_TreMs_ab ~ FDis_POS + ...      coef 13     0.4278  0.6758    
+                        log_TreMs_div ~ FDis_POS + ...      coef 13     2.1950  0.0469   *
+                           FRic_TreMs ~ FDis_POS + ...      coef 12     0.7576  0.4633    
+                           FEve_TreMs ~ FDis_POS + ...      coef 11     2.6767  0.0215   *
+                     FDis_HUM_dry_wet ~ FDis_POS + ...      coef 13     1.2736  0.2251    
+                             CWM_LIFE ~ FDis_POS + ...      coef 13     2.4425  0.0296   *
+                      CWM_ONTO ~ CWM_HUM_dry_wet + ...      coef 14    -0.4431  0.6644    
+                     FDis_ONTO ~ CWM_HUM_dry_wet + ...      coef 14     0.5630  0.5823    
+             CWM_DW_saproxylic ~ CWM_HUM_dry_wet + ...      coef 14    -0.0001  0.9999    
+                  log_TreMs_ab ~ CWM_HUM_dry_wet + ...      coef 13     0.1168  0.9088    
+                 log_TreMs_div ~ CWM_HUM_dry_wet + ...      coef 13    -0.4951  0.6288    
+                    FRic_TreMs ~ CWM_HUM_dry_wet + ...      coef 12    -0.4827  0.6380    
+                    FEve_TreMs ~ CWM_HUM_dry_wet + ...      coef 11    -0.1044  0.9187    
+              FDis_HUM_dry_wet ~ CWM_HUM_dry_wet + ...      coef 13    -0.5938  0.5629    
+                      CWM_LIFE ~ CWM_HUM_dry_wet + ...      coef 13     2.0659  0.0594    
+                            FDis_ONTO ~ CWM_ONTO + ...      coef 14     3.0909  0.0080  **
+                    CWM_DW_saproxylic ~ CWM_ONTO + ...      coef 14    -5.6581  0.0001 ***
+                         log_TreMs_ab ~ CWM_ONTO + ...      coef 13     0.8071  0.4341    
+                        log_TreMs_div ~ CWM_ONTO + ...      coef 13     1.5991  0.1338    
+                           FRic_TreMs ~ CWM_ONTO + ...      coef 12     0.5519  0.5911    
+                           FEve_TreMs ~ CWM_ONTO + ...      coef 11     2.3630  0.0376   *
+                     FDis_HUM_dry_wet ~ CWM_ONTO + ...      coef 13    -1.4604  0.1679    
+                             CWM_LIFE ~ CWM_ONTO + ...      coef 13     2.3659  0.0342   *
+                   CWM_DW_saproxylic ~ FDis_ONTO + ...      coef 14    -5.4786  0.0001 ***
+                        log_TreMs_ab ~ FDis_ONTO + ...      coef 13     0.4805  0.6389    
+                       log_TreMs_div ~ FDis_ONTO + ...      coef 13     3.3660  0.0051  **
+                          FRic_TreMs ~ FDis_ONTO + ...      coef 12     1.6944  0.1160    
+                          FEve_TreMs ~ FDis_ONTO + ...      coef 11     2.4359  0.0331   *
+                    FDis_HUM_dry_wet ~ FDis_ONTO + ...      coef 13     0.3016  0.7677    
+                            CWM_LIFE ~ FDis_ONTO + ...      coef 13     5.4000  0.0001 ***
+                log_TreMs_ab ~ CWM_DW_saproxylic + ...      coef 13    -1.6767  0.1175    
+               log_TreMs_div ~ CWM_DW_saproxylic + ...      coef 13    -2.5777  0.0230   *
+                  FRic_TreMs ~ CWM_DW_saproxylic + ...      coef 12    -1.2810  0.2244    
+                  FEve_TreMs ~ CWM_DW_saproxylic + ...      coef 11    -1.5946  0.1391    
+            FDis_HUM_dry_wet ~ CWM_DW_saproxylic + ...      coef 13     0.4116  0.6874    
+                    CWM_LIFE ~ CWM_DW_saproxylic + ...      coef 13    -4.2472  0.0010 ***
+                    log_TreMs_div ~ log_TreMs_ab + ...      coef 12     0.4231  0.6797    
+                       FRic_TreMs ~ log_TreMs_ab + ...      coef 12    -0.0352  0.9725    
+                       FEve_TreMs ~ log_TreMs_ab + ...      coef 10     0.0385  0.9700    
+                 FDis_HUM_dry_wet ~ log_TreMs_ab + ...      coef 12    -1.1226  0.2836    
+                         CWM_LIFE ~ log_TreMs_ab + ...      coef 12     0.6687  0.5164    
+                      FRic_TreMs ~ log_TreMs_div + ...      coef 13     3.8012  0.0022  **
+                      FEve_TreMs ~ log_TreMs_div + ...      coef 11     1.2381  0.2415    
+                FDis_HUM_dry_wet ~ log_TreMs_div + ...      coef 13     0.8304  0.4213    
+                        CWM_LIFE ~ log_TreMs_div + ...      coef 14     1.7689  0.0987    
+                         FEve_TreMs ~ FRic_TreMs + ...      coef 10     0.5735  0.5790    
+                   FDis_HUM_dry_wet ~ FRic_TreMs + ...      coef 12     1.4421  0.1749    
+                           CWM_LIFE ~ FRic_TreMs + ...      coef 13     1.5285  0.1503    
+                   FDis_HUM_dry_wet ~ FEve_TreMs + ...      coef 11     0.2507  0.8067    
+                           CWM_LIFE ~ FEve_TreMs + ...      coef 11     0.9362  0.3693    
+                     CWM_LIFE ~ FDis_HUM_dry_wet + ...      coef 13    -0.0454  0.9645    
+
+Global goodness-of-fit:
+
+  Fisher's C = 1433.401 with P-value = 0 and on 860 degrees of freedom
+
+---
+Coefficients:
+
+                Response      Predictor Estimate Std.Error DF Crit.Value P.Value    
+              log_LW_vol   level_depe_G  -1.4116    0.6095 15    -2.3162  0.0351   *
+              log_DW_vol   level_depe_G  13.3129    2.6068 15     5.1070  0.0001 ***
+            log_DW_dec12   level_depe_G  11.7307    3.2430 15     3.6172  0.0025  **
+            log_DW_dec34   level_depe_G   5.7322    3.1631 15     1.8122  0.0900    
+             log_DW_PBBM   level_depe_G   3.6864    3.0400 15     1.2126  0.2440    
+            log_DW_GBTGB   level_depe_G  11.7421    3.7137 15     3.1618  0.0064  **
+              log_DW_BMS   level_depe_G   3.8105    2.6312 15     1.4482  0.1681    
+              log_DW_BMD   level_depe_G  12.3615    3.3667 15     3.6716  0.0023  **
+          log_DW_div_tot   level_depe_G   4.5992    0.7430 15     6.1901  0.0000 ***
+              CWM_statut   level_depe_G  -0.8954    0.1418 15    -6.3133  0.0000 ***
+         log_FDis_statut   level_depe_G   1.4535    0.2475 15     5.8732  0.0000 ***
+    log_CWM_stade_saprox   level_depe_G   0.6420    0.6601 10     0.9726  0.3537    
+       FDis_stade_saprox   level_depe_G   1.6692    1.3460 10     1.2401  0.2432    
+                 CWM_dbh   level_depe_G  91.5325   57.5943 10     1.5893  0.1431    
+                FDis_dbh   level_depe_G   2.1469    0.5788 10     3.7095  0.0040  **
+          nb_TGB_All_sub   level_depe_G  18.7792   14.8993 15     1.2604  0.2268    
+            log_TreMs_ab   level_depe_G  -2.8881    1.3031 14    -2.2162  0.0437   *
+            log_TreMs_ab log_DW_div_tot   0.5740    0.2345 14     2.4472  0.0282   *
+           log_TreMs_div nb_TGB_All_sub   0.0435    0.0163 15     2.6706  0.0175   *
+              FRic_TreMs nb_TGB_All_sub   0.2517    0.0662 14     3.8007  0.0019  **
+              FRic_TreMs log_DW_div_tot   2.6094    0.8449 14     3.0886  0.0080  **
+              FEve_TreMs   level_depe_G  -2.5336    0.6670 12    -3.7986  0.0025  **
+              FEve_TreMs     log_DW_vol   0.1367    0.0308 12     4.4370  0.0008 ***
+              FEve_TreMs     log_LW_vol  -0.7457    0.1536 12    -4.8557  0.0004 ***
+              FEve_TreMs nb_TGB_All_sub   0.0130    0.0052 12     2.4976  0.0280   *
+   CWM_DW_type_substrate   level_depe_G   0.0403    0.2293 15     0.1759  0.8627    
+  FDis_DW_type_substrate   level_depe_G   0.1318    0.6842 15     0.1927  0.8498    
+                 CWM_POS   level_depe_G  -0.0914    0.4742 15    -0.1927  0.8498    
+                FDis_POS   level_depe_G  -0.3101    0.8289 15    -0.3741  0.7136    
+         CWM_HUM_dry_wet   level_depe_G  -0.2149    0.1539 15    -1.3959  0.1831    
+        FDis_HUM_dry_wet     log_DW_vol   0.0523    0.0219 15     2.3865  0.0306   *
+                CWM_LIFE nb_TGB_All_sub   0.0076    0.0036 15     2.1072  0.0523    
+                CWM_ONTO   level_depe_G   0.3356    0.3367 15     0.9968  0.3347    
+               FDis_ONTO   level_depe_G   0.6335    0.5571 15     1.1371  0.2733    
+       CWM_DW_saproxylic   level_depe_G  -0.1201    1.3156 15    -0.0913  0.9284    
+
+  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05
+
+---
+Individual R-squared:
+
+                Response method Marginal Conditional
+              log_LW_vol   none     0.23        0.28
+              log_DW_vol   none     0.49        0.68
+            log_DW_dec12   none     0.40        0.49
+            log_DW_dec34   none     0.15        0.22
+             log_DW_PBBM   none     0.04        0.53
+            log_DW_GBTGB   none     0.37        0.37
+              log_DW_BMS   none     0.10        0.15
+              log_DW_BMD   none     0.41        0.48
+          log_DW_div_tot   none     0.56        0.75
+              CWM_statut   none     0.68        0.71
+         log_FDis_statut   none     0.60        0.71
+    log_CWM_stade_saprox   none     0.07        0.07
+       FDis_stade_saprox   none     0.10        0.34
+                 CWM_dbh   none     0.11        0.59
+                FDis_dbh   none     0.53        0.53
+          nb_TGB_All_sub   none     0.05        0.43
+            log_TreMs_ab   none     0.28        0.37
+           log_TreMs_div   none     0.30        0.30
+              FRic_TreMs   none     0.58        0.58
+              FEve_TreMs   none     0.67        0.67
+   CWM_DW_type_substrate   none     0.00        0.03
+  FDis_DW_type_substrate   none     0.00        0.03
+                 CWM_POS   none     0.00        0.27
+                FDis_POS   none     0.01        0.25
+         CWM_HUM_dry_wet   none     0.10        0.10
+        FDis_HUM_dry_wet   none     0.18        0.51
+                CWM_LIFE   none     0.21        0.21
+                CWM_ONTO   none     0.06        0.06
+               FDis_ONTO   none     0.07        0.07
+       CWM_DW_saproxylic   none     0.00        0.00
